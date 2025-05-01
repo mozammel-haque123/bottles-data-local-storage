@@ -1,0 +1,16 @@
+.img{
+    border-radius: 20px;
+    border: 1px solid aquamarine;
+    width: 400px;
+}
+
+.card-botoe{
+    border: 1px solid cadetblue;
+    margin: 10px;
+    background-color: darkblue;
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+ 
