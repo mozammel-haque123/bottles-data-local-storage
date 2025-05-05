@@ -27,25 +27,20 @@ export default function Bottles() {
     }
     setCard(bottlesArray)
 
-    // // dui babe
-    // if(bottles.length){
-    //   const localUseEffact = localGet()
-    //   const bottlesArray = []
-    //   for(const ides of localUseEffact){
-    //    if(ides){
-    //     bottlesArray.push(ides)
-    //    }
-    //   }
-    //   setCard(bottlesArray)
-
      }
    },[bottles])
 
 
     const handaleClick = (bottle)=>{
-      const newCard = [...card, bottle];
+      const isCard = card.find((p)=> p.id == bottle.id)
+      if(isCard){
+        alert('button dabul click')
+      }else{
+         const newCard = [...card, bottle];
       setCard(newCard)
       addToLs(bottle.id)
+      }
+     
     }
 
     const handaleRemove = (id) =>{

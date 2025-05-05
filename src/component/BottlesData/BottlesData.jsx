@@ -3,15 +3,6 @@ import './BottlesData.css'
 export default function BottlesData({bottles,handaleClick}) {
     // console.log(bottles)
     const {img,ratingsCount,ratings,stock,price,seller,name,category} = bottles
-
-
-   const handleClickelse = (event) => {
-    if (event.detail === 2) {
-      console.log("Single click");
-    }
-  };
-
-
     
   return (
     <div className='card-botoe'>
